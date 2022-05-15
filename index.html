@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | CodeWithHarry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/069b45b725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" class="logo">CodeWithHarry</a>
+            <ul id="navItems">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="course.html" onclick="toggleMenu()">Courses</a></li>
+                <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                <a href="login.html"><button class="btn" onclick="toggleMenu()">Login</button></a>
+                <a href="signup.html"><button class="btn" onclick="toggleMenu()">Signup</button></a>
+            </ul>
+            <span onclick="toggleMenu()">&#9776;</span>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="left">
+                <h1>Welcome to <span>CodeWithHarry</span></h1>
+                <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course
+                    for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to
+                    people in short time which took me ages to learn.</p>
+                <div>
+                    <a href="course.html"><button class="btn-lg">Free Courses</button></a>
+                    <a href="blog.html"><button class="btn-lg btn-light">Explore Blog</button></a>
+                </div>
+            </div>
+            <div class="right"></div>
+        </section>
+        <section class="second-section">
+            <div class="heading">Recommended Courses</div>
+            <div class="row">
+                <div class="col">
+                    <img src="images/course1.png" alt="">
+                    <span>Free Course</span>
+                    <a href="/">Tailwind Course In Hindi</a>
+                    <p>Complete Tailwind CSS Course by CodeWithHarry in Hindi - Learn Tailwind CSS from scratch for
+                        free! </p>
+                    <a href="/" class="button button1">Start Watching</a>
+                </div>
+                <div class="col">
+                    <img src="images/course2.png" alt="">
+                    <span>Free Course</span>
+                    <a href="/">Next.js Tutorials For Beginners</a>
+                    <p>Complete Next.js Course by CodeWithHarry in Hindi - Learn Next.js from Scratch.</p>
+                    <a href="/" class="button button2">Start Watching</a>
+                </div>
+                <div class="col">
+                    <img src="images/course3.png" alt="">
+                    <span>Free Course</span>
+                    <a href="/">React Js Tutorials For Beginners</a>
+                    <p>React is a free and open-source front-end JavaScript library. This series will cover React from
+                        starting to the end. We will learn react from the ground up!</p>
+                    <a href="/" class="button button3">Start Watching</a>
+                </div>
+            </div>
+        </section>
+        <section class="third-section">
+            <div class="heading">Testimonials</div>
+            <div class="row">
+                <div class="col">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>I don't have words to thank this man, I'm really grateful to have this channel and website in my
+                        daily routine. If you're a mere beginner, then you can trust this guy and can put your time into
+                        his content. I can assure you that it'll be worth it.</p>
+                    <h4>Mohit Kumar</h4>
+                    <span>Web Developer</span>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is for
+                        you! Both basic and advanced stacks are covered on this channel, and one can learn according to
+                        his skill levels. And the icing on the cake is, everything is available for free.</p>
+                    <h4>Rakesh Shetty</h4>
+                    <span>Web Developer</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="left-footer">
+            <img src="images/logo-blue.png" alt="">
+            <h3>CodeWithHarry</h3>
+            <p>Copyright &copy; 2022 <a href="https://codewithharry.com" target="blank">CodeWithHarry.com</a> </p>
+        </div>
+        <div class="right-footer">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let menu = document.getElementById("navItems");
+        function toggleMenu() {
+            menu.classList.toggle("open-menu")
+        }
+    </script>
+</body>
+
+</html>

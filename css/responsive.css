@@ -1,0 +1,111 @@
+@media screen and (max-width:760px) {
+    ul {
+        position: absolute;
+        top: 69px;
+        flex-direction: column;
+        /* padding: 7px; */
+        width: 100%;
+        left: 0;
+        align-items: flex-start !important;
+        box-shadow: 0px 10px 2px -11px rgba(0, 0, 0, 0.5);
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.5s;
+        background-color: white;
+    }
+
+    ul li {
+        margin-bottom: 5px 0 !important;
+    }
+
+    ul li a {
+        font-size: 18px;
+        transition: all 0.5s;
+    }
+
+    ul .btn {
+        margin: 15px !important;
+    }
+
+    nav {
+        padding: 10px 1rem !important;
+    }
+
+    nav span {
+        display: block;
+    }
+
+    .third-section .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+    .contact-form .right-contact form{
+        width: 100%;
+    }
+    .blog .blog-box{
+        width: 95% !important;
+    }
+    .login .left-login{
+        display: none;
+    }
+    .login .right-login{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .first-section .right {
+        display: none;
+    }
+
+    .first-section .left {
+        width: 100%;
+        padding: 2rem 5rem !important;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .second-section .row {
+        grid-gap: 1rem !important;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .second-section .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:590px) {
+    .second-section .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:685px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .left-footer {
+        flex-direction: column;
+        margin-left: 0 !important;
+    }
+
+    footer .left-footer img {
+        margin-bottom: 1rem;
+    }
+
+    footer .left-footer p {
+        border-left: none !important;
+    }
+
+    footer .right-footer {
+        margin-right: 0 !important;
+    }
+
+}

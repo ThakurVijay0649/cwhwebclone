@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1.4px solid #ccc !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+nav .logo {
+    text-decoration: none;
+    color: #9b0a9b;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+nav .logo:hover {
+    color: #460246;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul .btn {
+    padding: 7px 13px;
+    background: #9b0a9b;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+nav ul .btn:hover {
+    background: #460246;
+}
+
+nav span {
+    font-size: 2.3rem;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+    border-radius: 6px;
+    color: #7c7b7b;
+    display: none;
+    cursor: pointer;
+}
+
+.open-menu {
+    max-height: 70vh;
+}
+
+.first-section {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.first-section .left {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0rem 5rem;
+}
+
+.first-section .left h1 {
+    font-size: 2.3rem;
+}
+
+.first-section .left h1 span {
+    color: purple;
+}
+
+.first-section .left p {
+    font-size: 14px;
+    color: #4f4e4e;
+}
+
+.first-section .left div {
+    margin: 17px 0;
+}
+
+.first-section .left div .btn-lg {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.first-section .left div .btn-lg:hover {
+    background-color: #474343;
+}
+
+.first-section .left div .btn-light {
+    background: #cdcdcd;
+    color: black;
+}
+
+.first-section .left div .btn-light:hover {
+    background: #9b9898;
+}
+
+
+.first-section .right {
+    background-image: url(../images/background.avif);
+    width: 50%;
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+
+.second-section .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+    width: 90%;
+    margin: auto;
+}
+
+.second-section .row .col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 6px 0px 31px 0px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    /* transition: all 0.9s; */
+}
+
+.second-section .row .col:hover {
+    transform: scale(1.01);
+}
+
+.second-section .row .col img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0 !important;
+}
+
+.second-section .row .col span {
+    padding: 1rem;
+    color: #9f9a9a;
+    padding-bottom: 0.2rem;
+}
+
+.second-section .row .col a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.second-section .row .col p {
+    padding: 0 1rem;
+    height: 20%;
+    color: #575757;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.second-section .row .col .button {
+    background: purple;
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.second-section .row .col .button1 {
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.second-section .row .col .button2 {
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.second-section .row .col .button3 {
+    margin-top: 3.6rem;
+    margin-left: 1rem;
+}
+
+.third-section .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: 90%;
+    margin: auto;
+}
+
+.third-section .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(234, 239, 248);
+    padding: 2rem;
+}
+
+.third-section .row .col i {
+    font-size: 2rem;
+    color: gray;
+}
+
+.third-section .row .col p {
+    font-size: 18px;
+    line-height: 33px;
+    color: gray;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.third-section .row .col h4 {
+    font-size: 20px;
+}
+
+.third-section .row .col span {
+    color: gray;
+}
+
+.course-section {
+    margin-top: 6rem;
+}
+
+.contact-form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(234, 239, 248);
+    width: 90%;
+    margin: 6rem auto;
+}
+
+.contact-form .left-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+.contact-form .left-contact h1 {
+    margin: 1rem;
+}
+
+.contact-form .left-contact span {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.contact-form .left-contact p {
+    color: gray;
+    font-weight: bold;
+}
+
+.contact-form .right-contact {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact-form .right-contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contact-form .right-contact form input, .contact-form .right-contact form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.contact-form .right-contact textarea {
+    resize: none;
+}
+
+.contact-form .right-contact button {
+    padding: 1rem;
+    width: 100%;
+    background: #9b0a9b;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.contact-form .right-contact button:hover {
+    background: #460246;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+footer .left-footer {
+    display: flex;
+    align-items: center;
+    /* width: 50%; */
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+footer .left-footer img {
+    width: 60px;
+}
+
+footer .left-footer h3 {
+    margin: 0 10px;
+}
+
+footer .left-footer p {
+    border-left: 3px solid #ccc;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+footer .left-footer p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .right-footer {
+    display: flex;
+    margin-right: 4rem;
+}
+
+footer .right-footer i {
+    font-size: 1.4rem;
+    color: gray;
+    margin: 0 9px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #460246;
+}
+
+.blog {
+    margin-top: 6rem;
+}
+
+.blog h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    background: rgb(234, 239, 248);
+    width: 80%;
+    padding: 2rem 1rem 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+}
+
+.blog .blog-box span {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.blog .blog-box a {
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6rem;
+}
+
+.login .left-login {
+    display: flex;
+    width: 30%;
+    background-image: url(../images/login.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+
+.login .right-login {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding:1rem;
+}
+
+.login .right-login img {
+    width: 60px;
+}
+
+.login .right-login h3 {
+    font-size: 1.5rem;
+    color: #3f3c3c;
+    font-weight: 600;
+}
+
+.login .right-login span {
+    font-size: 1rem;
+    color: gray;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.login .right-login .google {
+    background: rgb(234, 239, 248);
+    padding: 12px 0px;
+    width: 58%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+}
+
+.login .right-login .google i {
+    font-size: 25px;
+}
+
+.login .right-login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.login .right-login form button {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background: #9b0a9b;
+    border: noe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.login .right-login form button :hover {
+    background-color: #460246;
+}
+
+.login .right-login form a {
+    text-decoration: none;
+    color: black;
+    font-size: 20.2px;
+}
+
+.login .right-login form div label {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login .right-login form div label a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+
+.login .right-login form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login .right-login form div input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media screen and (max-width:956px) {
+    .login .right-login{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .login .right-login{
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .login .right-login .google {
+        width: 80%;
+    }
+}

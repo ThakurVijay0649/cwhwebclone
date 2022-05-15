@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CodeWithHarry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/069b45b725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" class="logo">CodeWithHarry</a>
+            <ul id="navItems">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="course.html" onclick="toggleMenu()">Courses</a></li>
+                <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                <a href="login.html"><button class="btn" onclick="toggleMenu()">Login</button></a>
+                <a href="signup.html"><button class="btn" onclick="toggleMenu()">Signup</button></a>
+            </ul>
+            <span onclick="toggleMenu()">&#9776;</span>
+        </nav>
+    </header>
+    <main>
+        <div class="login">
+            <div class="left-login">
+                <!-- <img src="images/login.avif" alt=""> -->
+            </div>
+            <div class="right-login">
+                <img src="images/logo-blue.png" alt="">
+                <h3>CodeWithHarry.com</h3>
+                <span>Welcome Back!</span>
+                <a href="" class="google"><i class="fa-brands fa-google"></i> Sign in With Google</a>
+                <span>OR LOGIN WITH EMAIL</span>
+                <form action="">
+                    <div>
+                        <label for="">Email Address</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Password <a href="">Forget Password?</a></label>
+                        <input type="password">
+                    </div>
+                    <button type="submit">Login</button>
+                    <a href="">OR SIGNUP</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left-footer">
+            <img src="images/logo-blue.png" alt="">
+            <h3>CodeWithHarry</h3>
+            <p>Copyright &copy; 2022 <a href="https://codewithharry.com" target="blank">CodeWithHarry.com</a> </p>
+        </div>
+        <div class="right-footer">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script>
+        let menu = document.getElementById("navItems");
+        function toggleMenu() {
+            menu.classList.toggle("open-menu")
+        }
+        function toggleLi2() {
+            document.title = 'Courses | CodeWithHarry'
+            console.log(document.title);
+        }
+    </script>
+</body>
+
+</html>

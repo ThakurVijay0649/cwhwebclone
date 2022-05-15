@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | CodeWithHarry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/069b45b725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" class="logo">CodeWithHarry</a>
+            <ul id="navItems">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="course.html" onclick="toggleMenu()">Courses</a></li>
+                <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                <a href="login.html"><button class="btn" onclick="toggleMenu()">Login</button></a>
+                <a href="signup.html"><button class="btn" onclick="toggleMenu()">Signup</button></a>
+            </ul>
+            <span onclick="toggleMenu()">&#9776;</span>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-form">
+            <div class="left-contact">
+                <h1>Lets talk about Everything!</h1>
+                <img src="images/logo-blue.png" alt="">
+                <span>Feel Free to ask us anything</span>
+                <p> Have doubt or suggestion to make? Feel free to ask anything. If you have any suggestions, please let
+                    me know. Your suggestions are highly appreciated. I appreciate your time and try hard to reply to
+                    every single message posted here! Keep dropping your priceless opinions.</p>
+            </div>
+            <div class="right-contact">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter Your Phone" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left-footer">
+            <img src="images/logo-blue.png" alt="">
+            <h3>CodeWithHarry</h3>
+            <p>Copyright &copy; 2022 <a href="https://codewithharry.com" target="blank">CodeWithHarry.com</a> </p>
+        </div>
+        <div class="right-footer">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script>
+        let menu = document.getElementById("navItems");
+        function toggleMenu() {
+            menu.classList.toggle("open-menu")
+        }
+        function toggleLi2(){
+            document.title = 'Courses | CodeWithHarry'
+            console.log(document.title);
+        }
+    </script>
+</body>
+
+</html>
